@@ -13,6 +13,20 @@ public class MainActivity
   private EditText et1;
   private EditText et2;
   private TextView tv1;
+
+  public void Elevado(View paramView){
+    paramView = et1.getText().toString();
+    string str = et2.getText().toString();
+    double d1 = Double.parseDouble(paramView);
+    double d2 = Double.parseDouble(str);
+    double res = d1;
+
+    for(int i=0; i<d2; i++){ 
+      res = d1*d2;
+    }
+
+    tv1.setText(String.valueOf(res));
+  }
   
   public void Dividir(View paramView)
   {
